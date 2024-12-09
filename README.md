@@ -4,11 +4,11 @@ Welcome to the **Red Rush Store**! This is an e-commerce website built with **Re
 ## Table of Contents
 
 - [Technologies Used](#technologies-used)
+- [Data Source](#data-source)
 - [Running the App Locally](#running-the-app-locally)
 - [Login Credentials](#login-credentials)
 - [Deployed App](#deployed-app)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Technologies Used
 
@@ -17,6 +17,10 @@ Welcome to the **Red Rush Store**! This is an e-commerce website built with **Re
 - **Redux**: A state management tool used to manage the global state of the app.
 - **CSS**: Used for styling the website.
 - **Vercel**: Hosting platform for deploying the app.
+
+## Data Source
+
+The product data is fetched dynamically from FakeStoreAPI. This ensures a realistic and scalable simulation of an online store.
   
 ## Running the App Locally
 
