@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
 					<div className="navbar-logo">
 						<img src={monkey_logo} alt="monkey" />
 					</div>
-					<div className="navbar-header">LETS PAINT THE FUTURE</div>
+					<div className="navbar-header">THE RED RUSH STORE</div>
 				</div>
 				<div className="navbar-menu">
 					<div className={`fullpagemenu ${isActive ? "active" : ""}`} id="nav">
@@ -40,18 +40,18 @@ const Navbar: React.FC = () => {
 									</a>
 								</li>
 								<li>
-									<a href="#" data-text="Blog">
-										Blog
+									<a href="#" data-text="SALE">
+										SALE
 									</a>
 								</li>
 								<li>
 									<a href="#" data-text="Testemonials">
-										Testimonials
+										FASHION
 									</a>
 								</li>
 								<li>
-									<a href="#" data-text="Community">
-										Community
+									<a href="#" data-text="CONTACT US">
+										CONTACT US
 									</a>
 								</li>
 								<li>

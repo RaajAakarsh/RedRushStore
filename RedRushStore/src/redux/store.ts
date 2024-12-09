@@ -2,31 +2,26 @@ import { configureStore } from "@reduxjs/toolkit";
 import { useDispatch } from "react-redux";
 import productReducer from "./ProductSlice";
 import { ProductState } from "./ProductSlice";
-import {
-	loadFromLocalStorage,
-	saveToLocalStorage,
-} from "../utils/localStorageUtils";
+import indexReducer from "./IndexSlice";
 
-const persistedState: { products: ProductState }  = loadFromLocalStorage() || {
+const initialState: { products: ProductState; index: { ind: number } } = {
 	products: {
 		data: [],
-		startIndex: 0,
-		endIndex: 4,
 		hasMore: true,
 		loading: false,
-		error : ""
+		error: "",
+	},
+	index: {
+		ind: 0,
 	},
 };
 
 export const store = configureStore({
 	reducer: {
 		products: productReducer,
+		index: indexReducer,
 	},
-	preloadedState: persistedState,
-});
-
-store.subscribe(() => {
-	saveToLocalStorage(store.getState());
+	preloadedState: initialState,
 });
 
 export type RootState = ReturnType<typeof store.getState>;

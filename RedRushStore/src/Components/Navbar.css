@@ -16,7 +16,6 @@
 .navbar-outermost-container .navbar-left-half {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	width: 60%;
 }
 
@@ -32,6 +31,8 @@
 	color: red;
 	-webkit-text-stroke: 2px black;
 	user-select: none;
+	margin-left: 3%;
+	text-wrap: nowrap;
 }
 
 .fullpagemenu {
@@ -65,7 +66,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	object-fit: fill;
 }
 
 .fullpagemenu .nav {
@@ -99,15 +100,14 @@
 }
 
 .fullpagemenu .nav ul li::after {
-    content: " ";
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background: red;
-    bottom: 0;
-    left: 0;
+	content: " ";
+	position: absolute;
+	height: 4px;
+	width: 100%;
+	background: red;
+	bottom: 0;
+	left: 0;
 }
-
 
 .fullpagemenu .nav ul li::before {
 	content: "";
@@ -174,12 +174,12 @@
 	background-repeat: no-repeat;
 	background-position: 10px;
 	box-shadow: 5px 5px 0 #00000035;
-    transition: all 0.2s;
+	transition: all 0.2s;
 }
 
-.menuicon:hover{
-    transform: translate(5px, 5px);
-    box-shadow: 0 0 0 #00000035;
+.menuicon:hover {
+	transform: translate(5px, 5px);
+	box-shadow: 0 0 0 #00000035;
 }
 
 .menuicon.active {
@@ -190,23 +190,23 @@
 	background-position: 10px;
 }
 
-.social_icons{
+.social_icons {
 	position: fixed;
 	width: 15%;
 	box-sizing: border-box;
 	top: -100%;
-	right: 10%;
+	right: 150px;
 	transition: 0.5s;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
-.social_icons.active{
+.social_icons.active {
 	top: 2%;
 }
 
-.social_icons span{
+.social_icons span {
 	border: solid 5px #070612;
 	padding: 8px 10px;
 	border-radius: 10px;
@@ -215,12 +215,159 @@
 	transition: all 0.2s;
 }
 
-.social_icons span:hover{
-	transform: translate(4px , 4px);
+.social_icons span:hover {
+	transform: translate(4px, 4px);
 	box-shadow: 1px 1px 0 #ffffff35;
 	cursor: pointer;
 }
 
-.social_icons img{
+.social_icons img {
 	height: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+	.fullpagemenu .nav {
+		margin-right: 0px;
+	}
+
+	.fullpagemenu .nav ul {
+		padding-right: 0px;
+	}
+
+	.fullpagemenu .nav ul li a {
+		font-size: 3em;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.navbar-outermost-container {
+		height: 85px;
+		padding-left: 3%;
+	}
+
+	.navbar-outermost-container .navbar-left-half {
+		width: 80%;
+	}
+	.navbar-outermost-container .navbar-left-half .navbar-header {
+		font-size: 30px;
+		color: #070612;
+		letter-spacing: 2px;
+		-webkit-text-stroke: 2px #070612;
+		text-wrap: wrap;
+		width: 100%;
+	}
+	.menuicon {
+		top: 15px;
+		right: 4%;
+		width: 55px;
+		background-size: 25px;
+		height: 55px;
+	}
+	.menuicon.active {
+		background-size: 25px;
+	}
+
+	.fullpagemenu .banner {
+		display: none;
+	}
+
+	.fullpagemenu .nav {
+		margin-right: 0px;
+	}
+
+	.fullpagemenu .nav ul {
+		padding-right: 0px;
+	}
+
+	.fullpagemenu .nav ul li a {
+		font-size: 3em;
+	}
+
+	.social_icons {
+		width: 180px;
+		right: 100px;
+	}
+
+	.social_icons span {
+		padding: 6px 8px;
+	}
+
+	.social_icons img {
+		height: 25px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.navbar-outermost-container {
+		height: 65px;
+		padding-left: 3%;
+	}
+
+	.navbar-outermost-container .navbar-left-half {
+		width: 80%;
+	}
+	.navbar-outermost-container .navbar-left-half .navbar-header {
+		font-size: 22px;
+	}
+
+	.navbar-outermost-container .navbar-left-half {
+		width: 80%;
+	}
+
+	.navbar-outermost-container .navbar-left-half .navbar-logo img {
+		height: 50px;
+	}
+
+	.menuicon {
+		top: 12px;
+		right: 3%;
+		width: 45px;
+		height: 45px;
+
+		background-size: 18px;
+		border: solid 4px;
+	}
+	.menuicon.active {
+		background-size: 18px;
+	}
+
+	
+	.social_icons {
+		width: 170px;
+		right: 70px;
+	}
+
+	.social_icons span {
+		padding: 5px 7px;
+	}
+
+	.fullpagemenu .nav ul li a {
+		font-size: 2em;
+	}
+
+	.social_icons img {
+		height: 20px;
+	}
+}
+
+
+
+
+@media screen and (max-width: 380px) {
+	.social_icons {
+		width: 170px;
+		right: 70px;
+	}
+
+	.social_icons span {
+		padding: 5px 7px;
+	}
+
+	.fullpagemenu .nav ul li a {
+		font-size: 2em;
+	}
+
+	.social_icons img {
+		height: 20px;
+	}
 }

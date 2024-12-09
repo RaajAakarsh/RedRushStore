@@ -88,3 +88,151 @@
 	transition: all 0.3s;
 	user-select: none;
 }
+
+@media screen and (max-width: 950px) {
+	.home-outermost-container {
+		padding: 25px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.home-art-panel {
+		position: relative;
+		font-size: 12rem;
+		top: -50px;
+	}
+	.home-X-panel {
+		top: -2rem;
+		font-size: 35rem;
+		left: 100px;
+		top: 35px;
+	}
+
+	.home-X-panel-shadow {
+		top: -2rem;
+		font-size: 35rem;
+		left: 100px;
+		top: 35px;
+	}
+
+	.home-change-panel {
+		position: relative;
+		font-size: 10rem;
+		padding-top: 0;
+		z-index: 20;
+		bottom: 50px;
+		right: -100px;
+	}
+
+	.home_page_quote {
+		position: absolute;
+		font-size: 45px;
+		padding: 8px;
+
+		line-height: 40px;
+		bottom: 38%;
+		left: 45%;
+	}
+}
+
+@media screen and (max-width: 725px) {
+	.home_page_quote {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.home-art-panel {
+		position: relative;
+		font-size: 11rem;
+		top: -25px;
+		left: 0px;
+	}
+	.home-X-panel {
+		font-size: 30rem;
+		left: 95px;
+		top: 125px;
+	}
+
+	.home-X-panel-shadow {
+		font-size: 30rem;
+		left: 95px;
+		top: 125px;
+	}
+
+	.home-change-panel {
+		font-size: 8rem;
+		z-index: 20;
+		bottom: 50px;
+		right: 0-30px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.home-outermost-container {
+		padding: 0px;
+	}
+	.home-art-panel {
+		position: relative;
+		font-size: 10rem;
+		top: 0px;
+		left: 10px;
+	}
+	.home-X-panel {
+		font-size: 25rem;
+		left: 100px;
+		top: 125px;
+	}
+
+	.home-X-panel-shadow {
+		font-size: 25rem;
+		left: 100px;
+		top: 125px;
+	}
+
+	.home-change-panel {
+		font-size: 8rem;
+		z-index: 20;
+		bottom: 150px;
+		right: -25px;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.home-outermost-container {
+		padding: 0px;
+	}
+	.home-art-panel {
+		position: relative;
+		font-size: 6rem;
+		top: 50px;
+		left: 10px;
+	}
+	.home-X-panel {
+		font-size: 20rem;
+		left: 75px;
+		top: 125px;
+	}
+
+	.home-X-panel-shadow {
+		font-size: 20rem;
+		left: 75px;
+		top: 125px;
+	}
+
+	.home-change-panel {
+		font-size: 5rem;
+		z-index: 20;
+		bottom: 200px;
+		right: -120px;
+	}
+
+	.home_page_quote {
+		display: block;
+		position: absolute;
+		font-size: 40px;
+		line-height: 40px;
+		bottom: 5%;
+		left: 4%;
+	}
+}

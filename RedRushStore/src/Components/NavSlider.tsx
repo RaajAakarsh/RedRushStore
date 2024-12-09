@@ -9,25 +9,25 @@ const NavSlider: React.FC = () => {
 						<span className = "navslider-dot">·</span>
 					</li>
 					<li>
-						<span>UNLEASH YOUR INNER ARTIST</span>
+						<span>SHOP FAST, SHOP RED</span>
 					</li>
 					<li>
 						<span className = "navslider-dot">·</span>
 					</li>
 					<li>
-						<span>PAINT YOUR SOUL</span>
+						<span>RUSH TO THE BEST DEALS</span>
 					</li>
 					<li>
 						<span className = "navslider-dot">·</span>
 					</li>
 					<li>
-						<span>ART IN MOTION, CREATORS UNITE</span>
+						<span>WHERE RED MEETS STYLE</span>
 					</li>
                     <li>
 						<span className = "navslider-dot">·</span>
 					</li>
 					<li>
-						<span>THE ART REVOLUTION IS HERE</span>
+						<span>EXPERIENCE THE RUSH OF RED</span>
 					</li>
                     
 				</ul>
@@ -36,25 +36,25 @@ const NavSlider: React.FC = () => {
 						<span className = "navslider-dot">·</span>
 					</li>
 					<li>
-						<span>UNLEASH YOUR INNER ARTIST</span>
+						<span>SHOP FAST, SHOP RED</span>
 					</li>
 					<li>
 						<span className = "navslider-dot">·</span>
 					</li>
 					<li>
-						<span>PAINT YOUR SOUL</span>
+						<span>RUSH TO THE BEST DEALS</span>
 					</li>
 					<li>
 						<span className = "navslider-dot">·</span>
 					</li>
 					<li>
-						<span>ART IN MOTION, CREATORS UNITE</span>
+						<span>WHERE RED MEETS STYLE</span>
 					</li>
                     <li>
 						<span className = "navslider-dot">·</span>
 					</li>
 					<li>
-						<span>THE ART REVOLUTION IS HERE</span>
+						<span>EXPERIENCE THE RUSH OF RED</span>
 					</li>
 				</ul>
 			</div>

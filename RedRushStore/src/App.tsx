@@ -8,7 +8,7 @@ function App() {
 	const dispatch = useAppDispatch();
 
 	useEffect(() => {
-		dispatch(getProducts({ startIndex: 0, endIndex: 4 }));
+		dispatch(getProducts());
 	}, []);
 
 	return (

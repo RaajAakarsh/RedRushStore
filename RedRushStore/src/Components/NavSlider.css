@@ -30,7 +30,7 @@
 }
 
 .navslider-outermost-container ul li {
-    min-width: 10px;
+	min-width: 10px;
 }
 
 .navslider-outermost-container:hover ul {
@@ -38,14 +38,33 @@
 	color: white;
 }
 
-.navslider-dot{
-    font-size: 3rem;
-    position: absolute;
-    top: -45%;
+.navslider-dot {
+	font-size: 3rem;
+	position: absolute;
+	top: -45%;
 }
 
 @keyframes scroll {
 	to {
 		transform: translateX(calc(-100% - 22px));
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.navslider-outermost-container {
+		height: 40px;
+		border-top: 4px solid #070612;
+		border-bottom: 4px solid #070612;
+	}
+
+	.navslider-outermost-container ul {
+		gap: 1rem;
+		font-size: 1.1rem;
+	}
+
+	.navslider-dot {
+		font-size: 2rem;
+		position: absolute;
+		top: -44%;
 	}
 }
