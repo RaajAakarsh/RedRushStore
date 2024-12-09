@@ -1,0 +1,51 @@
+.PanelType1_outermost_container{
+    position: relative;
+}
+
+.PanelType1_outer_container{
+    box-sizing: border-box;
+    width: 85%;
+    border-top-right-radius: 250px;
+    border-bottom-right-radius: 250px;
+    background-color: red;
+    display: flex;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.Panel_type1_before{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    position: absolute;
+    z-index: 12;
+    top: -50px;
+}
+
+.Panel_type1_before::after{
+    content: " ";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #070612;
+    z-index: 13;
+    border-bottom-left-radius: 50px;
+}
+
+.Panel_type1_after{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    position: absolute;
+    z-index: 12;
+    bottom: -50px;
+}
+
+.Panel_type1_after::after{
+    content: " ";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #070612;
+    z-index: 13;
+    border-top-left-radius: 50px;
+}

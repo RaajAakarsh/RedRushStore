@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Audiowide&family=Dancing+Script:wght@400..700&family=Jaro:opsz@6..72&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+.navbar-outermost-container {
+	height: 90px;
+	background-color: rgb(255, 0, 0);
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	z-index: 30;
+	padding-left: 5%;
+}
+
+.navbar-outermost-container .navbar-left-half {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 60%;
+}
+
+.navbar-outermost-container .navbar-left-half .navbar-logo img {
+	height: 70px;
+}
+
+.navbar-outermost-container .navbar-left-half .navbar-header {
+	box-sizing: border-box;
+	font-family: "Audiowide", sans-serif;
+	font-size: 50px;
+	font-weight: 900;
+	color: red;
+	-webkit-text-stroke: 2px black;
+	user-select: none;
+}
+
+.fullpagemenu {
+	position: fixed;
+	top: -100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #070612;
+	transition: 0.5s;
+	font-family: "audiowide", Arial, Helvetica, sans-serif;
+}
+
+.fullpagemenu.active {
+	top: 0;
+	overflow-y: hidden;
+}
+
+.fullpagemenu .banner {
+	position: relative;
+	min-width: 600px;
+	height: 100%;
+}
+
+.fullpagemenu .banner img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.fullpagemenu .nav {
+	margin-right: 20px;
+	display: flex;
+	justify-content: end;
+	align-items: end;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+}
+
+.fullpagemenu .nav ul {
+	padding-right: 25px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+.fullpagemenu .nav ul li {
+	position: relative;
+	list-style: none;
+	padding: 0 20px;
+	margin: 5px 0;
+	overflow: hidden;
+	display: table;
+	text-align: end;
+}
+
+.fullpagemenu .nav ul li::after {
+    content: " ";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: red;
+    bottom: 0;
+    left: 0;
+}
+
+
+.fullpagemenu .nav ul li::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #ff0000;
+	transition: transform 0.5s ease-in-out;
+	transform: scaleY(0);
+	transform-origin: bottom;
+}
+
+.fullpagemenu .nav ul li:hover::before {
+	transition: transform 0.5s ease-in-out;
+	transform: scaleY(1);
+	transform-origin: top;
+}
+
+.fullpagemenu .nav ul li a {
+	position: relative;
+	color: #fff;
+	text-decoration: none;
+	font-size: 4em;
+	font-weight: 700;
+	line-height: 1em;
+	padding-top: 12px;
+	display: inline-block;
+	text-transform: uppercase;
+	transition: 0.5s ease-in-out;
+}
+
+.fullpagemenu .nav ul li a::before {
+	content: attr(data-text);
+	position: absolute;
+	bottom: -100%;
+	left: 0;
+	color: #fff;
+}
+
+.fullpagemenu .nav ul li:hover a {
+	transform: translateY(-100%);
+	color: #fff;
+}
+
+.navbar-outermost-container .navbar-menu::before {
+	position: relative;
+	left: -100px !important;
+	cursor: pointer;
+}
+
+.menuicon {
+	border: solid #070612 5px;
+	position: fixed;
+	top: 20px;
+	right: 5%;
+	width: 60px;
+	border-radius: 50%;
+	height: 60px;
+	background: rgb(0, 255, 0) url("./../assets/menu.png");
+	background-size: 30px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: 10px;
+	box-shadow: 5px 5px 0 #00000035;
+    transition: all 0.2s;
+}
+
+.menuicon:hover{
+    transform: translate(5px, 5px);
+    box-shadow: 0 0 0 #00000035;
+}
+
+.menuicon.active {
+	background: rgb(0, 255, 0) url("./../assets/close.png");
+	background-size: 30px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: 10px;
+}
+
+.social_icons{
+	position: fixed;
+	width: 15%;
+	box-sizing: border-box;
+	top: -100%;
+	right: 10%;
+	transition: 0.5s;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.social_icons.active{
+	top: 2%;
+}
+
+.social_icons span{
+	border: solid 5px #070612;
+	padding: 8px 10px;
+	border-radius: 10px;
+	background-color: #f5b8d4;
+	box-shadow: 5px 5px 0 #ffffff35;
+	transition: all 0.2s;
+}
+
+.social_icons span:hover{
+	transform: translate(4px , 4px);
+	box-shadow: 1px 1px 0 #ffffff35;
+	cursor: pointer;
+}
+
+.social_icons img{
+	height: 30px;
+}
